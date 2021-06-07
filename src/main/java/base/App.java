@@ -32,8 +32,10 @@ public class App {
     }
     private int readW(){
         System.out.print("Please enter your weight in pounds. ");
-        while(!inp.hasNextInt())
-            System.out.print("Please enter a numerical weight in pounds. ");
+        while(!inp.hasNextInt()) {
+            System.out.print("Please enter a numerical height in inches. ");
+            inp.nextLine();
+        }
         return Integer.parseInt(inp.nextLine());
     }
 }
